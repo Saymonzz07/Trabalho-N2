@@ -1,0 +1,101 @@
+
+
+.site-header {
+    width: 100%;
+    max-width: 1180px;
+    height: 76px;
+    margin: 0 auto;
+    padding: 0 5.5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+}
+
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #174b43;
+    text-decoration: none;
+}
+
+
+.logo-symbol {
+    width: 42px;
+    height: 38px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 16px;
+}
+
+
+.sun {
+    color: #f47721;
+    font-size: 25px;
+    height: 21px;
+}
+
+
+.waves {
+    color: #174b43;
+    font-size: 27px;
+    font-weight: 800;
+    transform: rotate(-8deg);
+}
+
+
+.logo-name {
+    font-size: 11px;
+    line-height: 1.15;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+.logo-name strong {
+    display: block;
+    color: #f47721;
+    font-size: 12px;
+}
+
+
+.site-header nav {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+
+    font-size: 13px;
+    color: #315a54;
+}
+
+
+.site-header nav a {
+    padding: 10px 2px;
+
+    text-decoration: none;
+    color: inherit;
+
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+
+.site-header nav a:hover {
+    color: #f47721;
+    border-bottom-color: #f47721;
+}
+
+
+.site-header nav a.active {
+    color: #f47721;
+    border-bottom-color: #f47721;
+}
+

@@ -1,0 +1,169 @@
+
+/* FUNDO DA SEÇÃO */
+.registration {
+    width: 100%;
+    min-height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+
+    background: #1c1c1c;
+}
+
+/* CARD DO CADASTRO */
+.registration-card {
+    width: 100%;
+    max-width: 420px;
+
+    padding: 35px 32px;
+
+    background: #ffffff;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* TÍTULO */
+.registration-card h2 {
+    text-align: center;
+
+    color: #174b43;
+    font-size: 25px;
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+/* DESCRIÇÃO */
+.registration-description {
+    text-align: center;
+
+    color: #777777;
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+/* FORMULÁRIO */
+.registration-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* LABEL */
+.registration-card label {
+    color: #333333;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 6px;
+}
+
+/* CAMPOS */
+.registration-card input,
+.registration-card select {
+    width: 100%;
+    height: 42px;
+
+    padding: 0 12px;
+
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+
+    background: #ffffff;
+    color: #333333;
+
+    font-size: 12px;
+
+    outline: none;
+
+    margin-bottom: 16px;
+
+    transition: 0.3s;
+}
+
+/* PLACEHOLDER */
+.registration-card input::placeholder {
+    color: #aaaaaa;
+}
+
+/* FOCO NOS CAMPOS */
+.registration-card input:focus,
+.registration-card select:focus {
+    border-color: #f47721;
+
+    box-shadow: 0 0 0 2px rgba(244, 119, 33, 0.12);
+}
+
+.registration-card button {
+    width: 100%;
+    height: 42px;
+
+    margin-top: 5px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: #e97827;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.registration-card button:hover {
+    background: #cc5e16;
+}
+
+.form-message {
+    padding: 10px;
+
+    margin-top: 15px;
+
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.form-message.sucesso {
+    color: #17613e;
+    background: #e7f6ec;
+}
+
+.form-message.erro {
+    color: #9c342b;
+    background: #fff0ed;
+}
+
+
+.registration-footer {
+    text-align: center;
+
+    color: #999999;
+    font-size: 10px;
+
+    margin-top: 25px;
+}
+
+@media (max-width: 480px) {
+
+    .registration {
+        padding: 35px 15px;
+    }
+
+    .registration-card {
+        padding: 28px 22px;
+    }
+
+    .registration-card h2 {
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,74 @@
+
+.site-footer {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 30px;
+    padding: 35px 6%;
+    color: #58716a;
+    font-size: 11px;
+}
+
+.footer-about p {
+    line-height: 1.5;
+    margin: 13px 0;
+    color: #58716a;
+}
+
+.footer-about strong,
+.footer-links strong,
+.footer-contact strong {
+    display: block;
+    color: #174b43;
+    margin: 7px 0;
+    font-size: 12px;
+}
+
+.footer-about span,
+.footer-links a,
+.footer-contact span {
+    display: block;
+    margin: 5px 0;
+    color: #58716a;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #f47721;
+}
+
+.copyright {
+    background-color: #eef3ee;
+    text-align: center;
+    padding: 10px;
+    color: #6c827a;
+    font-size: 10px;
+}
+
+/* Tablets e celulares */
+@media (max-width: 700px) {
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-about {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Celulares menores */
+@media (max-width: 390px) {
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-about {
+        grid-column: auto;
+    }
+}

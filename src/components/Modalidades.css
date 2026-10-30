@@ -1,0 +1,129 @@
+
+/* SEÇÃO DE MODALIDADES */
+.modalities-section {
+    padding: 45px 6%;
+    background-color: #ffffff;
+}
+
+/* CABEÇALHO DA SEÇÃO */
+.section-heading {
+    margin-bottom: 25px;
+}
+
+/* TEXTO PEQUENO */
+.section-heading .eyebrow {
+    color: #f47721;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* TÍTULO */
+.section-heading h2 {
+    color: #174b43;
+    font-size: 27px;
+    font-weight: 700;
+    margin: 5px 0 25px;
+}
+
+/* GRADE DOS CARDS */
+.modality-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 850px;
+}
+
+/* CARD INDIVIDUAL */
+.modality-card {
+    min-height: 195px;
+
+    padding: 23px 25px 18px;
+
+    background: linear-gradient(
+        145deg,
+        #edf2ed,
+        #e5ece6
+    );
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.modality-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(23, 75, 67, 0.10);
+}
+
+/* ÍCONE DA MODALIDADE */
+.modality-icon {
+    display: block;
+
+    height: 43px;
+
+    color: #174b43;
+    font-size: 31px;
+}
+
+/* NOME DO ESPORTE */
+.modality-card h3 {
+    color: #16453e;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    margin: 9px 0 8px;
+}
+
+/* DESCRIÇÃO */
+.modality-card p {
+    color: #557069;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    max-width: 190px;
+    min-height: 39px;
+
+    margin-bottom: 9px;
+}
+
+/* SETA DO CARD */
+.modality-card a {
+    display: inline-block;
+
+    color: #f47721;
+    font-size: 24px;
+    line-height: 1;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+/* EFEITO DA SETA */
+.modality-card a:hover {
+    transform: translateX(5px);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 700px) {
+
+    .modalities-section {
+        padding: 42px 6%;
+    }
+
+    .modality-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .modality-card {
+        min-height: 155px;
+    }
+
+    .modality-card p {
+        min-height: 0;
+    }
+}

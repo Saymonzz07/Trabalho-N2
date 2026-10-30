@@ -1,0 +1,139 @@
+
+/* SEÇÃO PRINCIPAL */
+.hero {
+    min-height: 390px;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        110deg,
+        #f0f4ef,
+        #e7eee8
+    );
+}
+
+/* ÁREA DOS TEXTOS */
+.hero-copy {
+    padding: 62px 9% 55px 10%;
+
+    align-self: center;
+    z-index: 1;
+}
+
+/* TEXTO PEQUENO */
+.hero-copy .eyebrow {
+    color: #f47721;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* TÍTULO PRINCIPAL */
+.hero h1 {
+    color: #174b43;
+
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.08;
+
+    letter-spacing: -1.2px;
+
+    margin: 9px 0 15px;
+}
+
+/* DESCRIÇÃO */
+.hero-copy p {
+    max-width: 420px;
+
+    color: #47645e;
+
+    font-size: 15px;
+    line-height: 1.55;
+
+    margin-bottom: 24px;
+}
+
+/* BOTÃO */
+.hero-copy .primary-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 13px 25px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: #f47721;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* EFEITO DO BOTÃO */
+.hero-copy .primary-button:hover {
+    background: #dc6418;
+    transform: translateY(-2px);
+}
+
+/* IMAGEM DA QUADRA */
+.hero-image {
+    min-height: 390px;
+
+    background-image: url("https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=1200&q=85");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 65px 0 0 0;
+}
+
+/* DETALHE LARANJA */
+.hero-corner {
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    right: -14px;
+    bottom: -55px;
+
+    border: 14px solid #ffffff;
+    border-radius: 100% 0 0 0;
+
+    background: #f47721;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 700px) {
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-copy {
+        padding: 42px 7% 34px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-image {
+        min-height: 240px;
+        border-radius: 45px 0 0 0;
+    }
+
+    .hero-corner {
+        width: 85px;
+        height: 85px;
+    }
+}
