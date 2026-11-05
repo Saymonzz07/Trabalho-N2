@@ -1,5 +1,3 @@
-
-/* SEÇÃO PRINCIPAL */
 .hero {
     min-height: 390px;
 
@@ -16,7 +14,7 @@
     );
 }
 
-/* ÁREA DOS TEXTOS */
+
 .hero-copy {
     padding: 62px 9% 55px 10%;
 
@@ -24,7 +22,6 @@
     z-index: 1;
 }
 
-/* TEXTO PEQUENO */
 .hero-copy .eyebrow {
     color: #f47721;
 
@@ -32,7 +29,7 @@
     font-weight: 600;
 }
 
-/* TÍTULO PRINCIPAL */
+
 .hero h1 {
     color: #174b43;
 
@@ -44,7 +41,7 @@
     margin: 9px 0 15px;
 }
 
-/* DESCRIÇÃO */
+
 .hero-copy p {
     max-width: 420px;
 
@@ -56,7 +53,7 @@
     margin-bottom: 24px;
 }
 
-/* BOTÃO */
+
 .hero-copy .primary-button {
     display: inline-flex;
     justify-content: center;
@@ -77,13 +74,13 @@
     transition: 0.3s;
 }
 
-/* EFEITO DO BOTÃO */
+
 .hero-copy .primary-button:hover {
     background: #dc6418;
     transform: translateY(-2px);
 }
 
-/* IMAGEM DA QUADRA */
+
 .hero-image {
     min-height: 390px;
 
@@ -96,7 +93,6 @@
     border-radius: 65px 0 0 0;
 }
 
-/* DETALHE LARANJA */
 .hero-corner {
     position: absolute;
 
@@ -112,7 +108,7 @@
     background: #f47721;
 }
 
-/* RESPONSIVIDADE */
+
 @media (max-width: 700px) {
 
     .hero {

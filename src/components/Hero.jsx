@@ -1,5 +1,5 @@
 import "./Hero.css";
-import { Link } from "react-router-dom";
+
 
 export default function Hero() {
   return (
@@ -14,9 +14,9 @@ export default function Hero() {
           se conectar com pessoas e aproveitar o melhor da vida ao ar livre.
         </p>
 
-        <Link className="primary-button" to="/cadastro">
-          Quero me cadastrar
-        </Link>
+        <a className="primary-button" href="#cadastro">
+      Quero me cadastrar
+        </a>
       </div>
 
       <div

@@ -1,6 +1,6 @@
 import Logo from "./Logo";
 import "./Header.css";
-import { Link } from "react-router-dom";
+
 
 export default function Header() {
   return (
@@ -8,9 +8,9 @@ export default function Header() {
       <Logo />
 
       <nav aria-label="Navegação principal">
-        <Link to="/">Início</Link>
-        <Link to="/#modalidades">Modalidades</Link>
-        <Link to="/cadastro">Cadastre-se</Link>
+        <a href="#inicio">Inicio</a>
+        <a href="#modalidades">Modalidades</a>
+        <a href="#cadastro">Cadastro</a>
       </nav>
     </header>
   );

@@ -1,5 +1,4 @@
 
-/* FUNDO DA SEÇÃO */
 .registration {
     width: 100%;
     min-height: 550px;
@@ -10,10 +9,10 @@
 
     padding: 50px 20px;
 
-    background: #1c1c1c;
+    background: #edf2ed;
 }
 
-/* CARD DO CADASTRO */
+
 .registration-card {
     width: 100%;
     max-width: 420px;
@@ -26,7 +25,7 @@
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* TÍTULO */
+
 .registration-card h2 {
     text-align: center;
 
@@ -37,7 +36,7 @@
     margin-bottom: 8px;
 }
 
-/* DESCRIÇÃO */
+
 .registration-description {
     text-align: center;
 
@@ -47,13 +46,13 @@
     margin-bottom: 25px;
 }
 
-/* FORMULÁRIO */
+
 .registration-card form {
     display: flex;
     flex-direction: column;
 }
 
-/* LABEL */
+
 .registration-card label {
     color: #333333;
 
@@ -63,7 +62,7 @@
     margin-bottom: 6px;
 }
 
-/* CAMPOS */
+
 .registration-card input,
 .registration-card select {
     width: 100%;
@@ -86,12 +85,12 @@
     transition: 0.3s;
 }
 
-/* PLACEHOLDER */
+
 .registration-card input::placeholder {
     color: #aaaaaa;
 }
 
-/* FOCO NOS CAMPOS */
+
 .registration-card input:focus,
 .registration-card select:focus {
     border-color: #f47721;
@@ -166,4 +165,24 @@
     .registration-card h2 {
         font-size: 22px;
     }
+
+@media (max-width: 700px) {
+
+    .modalities-section {
+        padding: 42px 6%;
+    }
+
+    .modality-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .modality-card {
+        min-height: 155px;
+    }
+
+    .modality-card p {
+        min-height: 0;
+    }
+}
 }
